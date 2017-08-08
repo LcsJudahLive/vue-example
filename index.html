@@ -1,0 +1,15 @@
+<div id="app">
+  <ul>
+    <todo-item
+      v-for="todo in todos"
+      v-bind:todo="todo"
+      v-bind:key="todo.id">
+    </todo-item>
+  </ul>
+
+  <p>{{ url | strip }}</p>
+  <a v-bind:href="url">Link to Google</a>
+</div>
+
+<script src="https://unpkg.com/vue"></script>
+<script src="index.js"></script>
